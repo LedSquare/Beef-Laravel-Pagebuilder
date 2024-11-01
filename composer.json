@@ -8,12 +8,6 @@
             "email": "hans@falcosolutions.nl"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/LedSquare/Beef-PHPageBuilder"
-        }
-    ],
     "require": {
         "php": ">=7.0",
         "ledsquare/beef-phpagebuilder": "^1.0"
