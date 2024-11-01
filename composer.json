@@ -1,11 +1,6 @@
 {
-    "name": "hansschouten/laravel-pagebuilder",
-    "description": "A drag and drop pagebuilder to manage pages in any Laravel project.",
-    "keywords": [
-        "laravel",
-        "pagebuilder"
-    ],
-    "homepage": "https://github.com/HansSchouten/Laravel-Pagebuilder",
+    "name": "ledsquare/laravel-pagebuilder",
+    "homepage": "https://github.com/LedSquare/Beef-Laravel-Pagebuilder",
     "license": "MIT",
     "authors": [
         {
@@ -13,9 +8,15 @@
             "email": "hans@falcosolutions.nl"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/LedSquare/Beef-PHPageBuilder"
+        }
+    ],
     "require": {
         "php": ">=7.0",
-        "hansschouten/phpagebuilder": "^0.29"
+        "ledsquare/beef-phpagebuilder": "^1.0"
     },
     "autoload": {
         "psr-4": {
