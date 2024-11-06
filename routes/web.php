@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use HansSchouten\LaravelPageBuilder\LaravelPageBuilder;
 
-// handle pagebuilder asset requests
-Route::any( config('pagebuilder.general.assets_url') . '{any}', function() {
+Route::prefix('builder')->group(function(){
+    Route::any( config('pagebuilder.general.assets_url') . '{any}', function() {
 
     $builder = new LaravelPageBuilder(config('pagebuilder'));
     $builder->handlePageBuilderAssetRequest();
@@ -49,3 +49,5 @@ if (config('pagebuilder.router.use_router')) {
     })->where('any', '.*');
 
 }
+
+});
